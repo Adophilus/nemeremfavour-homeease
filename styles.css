@@ -1,0 +1,173 @@
+body {
+    font-family: 'Poppins';
+    margin: 0;
+}
+
+
+/* Navigation Menu */
+
+.navbar {
+    padding: 0;
+}
+
+.container-fluid {
+    background-color: #006729;
+    padding: 1% 7% 1% 7%;
+}
+
+.navbar-brand {
+    font-family: 'satoshi';
+    font-size: 1.7rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.nav-item {
+    padding: 0;
+}
+
+.nav-link {
+    color: #efefef;
+    font-size: 1.2rem;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+
+/* Hero Section */
+
+#hero-section {
+    background-color: #fff;
+    padding: 6% 9% 10%;
+    text-align: center;
+}
+
+.heading-section {
+    text-align: left;
+}
+
+.heading-text {
+    font-size: 3.1rem;
+    font-weight: 600;
+    padding-bottom: 3%;
+    line-height: 1.4;
+}
+
+.heading-subtext {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-weight: 200;
+}
+
+.learn-more {
+    background-color: #006729;
+    font-size: 1rem;
+    padding: 2% 4%;
+}
+
+.hero-image {
+    width: 100%;
+}
+
+
+/* Get Our Apps */
+
+#get-apps {
+    background-color: #006729;
+    padding: 6% 9% 7%;
+    text-align: center;
+}
+
+.ad-video {
+    width: 75%;
+    text-align: center;
+    margin-top: -11rem;
+    padding-bottom: 2%;
+    border-radius: 20px;
+}
+
+.get-our-app-text {
+    padding: 2%;
+    color: #fff;
+}
+
+.download-button {
+    margin-right: 6px;
+}
+
+
+/* Who are we? */
+
+#who-are-we {
+    text-align: center;
+    background-color: #fdfdfd;
+    padding: 6% 8% 5%;
+}
+
+.iphone {
+    width: 100%;
+    margin-top: -12.2rem;
+}
+
+.who-are-we-text {
+    text-align: left;
+}
+
+.who-are-we-h1 {
+    font-family: 'Poppins';
+    color: #434343;
+    font-weight: 600;
+    padding: 1.5% 0 1%;
+}
+
+.who-are-we-p {
+    font-size: 1.1rem;
+    padding-right: 25%;
+}
+
+
+/* Services */
+
+.services-icon {
+    padding-top: 3%;
+}
+
+.h3-div {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 3% 2% 1%;
+}
+
+.img-icons {
+    color: #006729;
+    width: 100%;
+    text-align: center;
+}
+
+.img-icons:hover {
+    color: #035423;
+    text-align: center;
+}
+
+/* Comment & Reviews */
+
+#comments {
+    background-color: #006729;
+    padding: 6% 9% 7%;
+    text-align: center;
+}
+
+.comments {
+    text-align: left;
+}
+
+.comments-h2 {
+    color: #fff;
+}
+
+.reviews {
+    color: #efefef;
+}
