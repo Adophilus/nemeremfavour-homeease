@@ -1,0 +1,207 @@
+body {
+    font-family: 'Poppins';
+    margin: 0;
+}
+
+
+/* Navigation Menu */
+
+.navbar {
+    padding: 0;
+}
+
+.container-fluid {
+    background-color: #006729;
+    padding: 1% 7% 1% 7%;
+}
+
+.navbar-brand {
+    font-family: 'satoshi';
+    font-size: 1.7rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.nav-item {
+    padding: 0;
+}
+
+.nav-link {
+    color: #efefef;
+    font-size: 1.2rem;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+
+/* Hero Section */
+
+#hero-section {
+    background-color: #fff;
+    padding: 4% 7% 4% 10%;
+    text-align: center;
+}
+
+.heading-section {
+    text-align: left;
+}
+
+.head-text{
+    padding: 11% 0 10% ;
+}
+
+.heading-text {
+    font-size: 3.3rem;
+    font-weight: 600;
+    padding-bottom: 3%;
+    line-height: 1.4;
+    padding-right: 10%;
+}
+
+.heading-subtext {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    font-weight: 200;
+    padding-right: 9%;
+    padding-bottom: 3%;
+}
+
+.learn-more {
+    background-color: #006729;
+    font-size: 1.2rem;
+    padding: 2% 4%;
+    color: white;
+}
+
+.hero-image{
+    text-align: center;
+}
+
+
+/* Get Our Apps */
+
+#get-apps {
+    background-color: #006729;
+    padding: 6% 9% 7%;
+    text-align: center;
+}
+
+.ad-video {
+    width: 75%;
+    text-align: center;
+    margin-top: -11rem;
+    padding-bottom: 2%;
+    border-radius: 20px;
+}
+
+.get-our-app-text {
+    padding: 1% 0;
+    color: #fff; 
+    text-align: left;
+    font-size: 2.5rem;
+    line-height: 1.3;
+}
+
+.download-button {
+    text-align: left;
+} 
+
+.download-btn{
+    font-size: 1.25rem;
+    padding: 12px 17px;
+    margin-right: 10px;
+}
+
+
+/* Who are we? */
+
+#who-are-we {
+    text-align: center;
+    background-color: #fefefe;
+    padding: 6% 8% 5%;
+}
+
+.iphone {
+    width: 90%;
+    margin-top: -20rem;
+}
+
+.who-are-we-text {
+    text-align: left;
+    padding-bottom: 5%;
+}
+
+.who-are-we-h1 {
+    font-size: 3rem;
+    font-family: 'Poppins';
+    color: #1d1d1d;
+    font-weight: 600;
+    padding: 3% 0 1%;
+}
+
+.who-are-we-h2 {
+    font-size: 3rem;
+    font-family: 'Poppins';
+    color: #1d1d1d;
+    font-weight: 600;
+    padding: 9% 0 1%;
+}
+
+.who-are-we-p {
+    font-size: 1.4rem;
+    padding-right: 22%;
+    font-weight: 400;
+}
+
+
+/* Services */
+
+.services-icon {
+    padding: 0;
+}
+
+.icons{
+    padding: 0;
+}
+
+.h3-div {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 4% 2% 1%;
+}
+
+.img-icons {
+    color: #006729;
+    width: 100%;
+    text-align: center;
+}
+
+.img-icons:hover {
+    color: #035423;
+    text-align: center;
+}
+
+/* Comment & Reviews */
+
+#comments {
+    padding: 0 9% 7%;
+    text-align: center;
+}
+
+.comments {
+    text-align: left;
+}
+
+.comments-h2 {
+    font-size: 2.6rem;
+    font-weight: 500;
+    color: #1d1d1d;
+}
+
+.reviews{
+    font-size: 1.4rem;
+    color: #1d1d1d;
+}
