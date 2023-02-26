@@ -12,27 +12,38 @@ body {
 
 .container-fluid {
     background-color: #006729;
-    padding: 1% 7% 1% 7%;
+    padding: 1.3% 7% 1.3% 7%;
+    border-radius: 15px;
 }
 
-.navbar-brand {
-    font-family: 'satoshi';
-    font-size: 1.7rem;
+.navbar-bg {
     color: #fff;
-    font-weight: 600;
+    margin: 2.1% 2.7% 0 2.7%;
 }
 
 .nav-item {
     padding: 0;
 }
 
+.favicon {
+    max-width: 50px;
+}
+
 .nav-link {
     color: #efefef;
     font-size: 1.2rem;
+    border-radius: 5px;
+    margin-left: 8px;
 }
 
 .nav-link:hover {
-    color: #fff;
+    background-color: #fff;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.active {
+    background-color: #fff;
 }
 
 
@@ -40,7 +51,7 @@ body {
 
 #hero-section {
     background-color: #fff;
-    padding: 4% 7% 4% 10%;
+    padding: 4% 7% 3% 10%;
     text-align: center;
 }
 
@@ -48,8 +59,8 @@ body {
     text-align: left;
 }
 
-.head-text{
-    padding: 11% 0 10% ;
+.head-text {
+    padding: 11% 0 10%;
 }
 
 .heading-text {
@@ -75,8 +86,8 @@ body {
     color: white;
 }
 
-.hero-image{
-    text-align: center;
+.hero-image {
+    text-align: left;
 }
 
 
@@ -98,7 +109,7 @@ body {
 
 .get-our-app-text {
     padding: 1% 0;
-    color: #fff; 
+    color: #fff;
     text-align: left;
     font-size: 2.5rem;
     line-height: 1.3;
@@ -106,9 +117,9 @@ body {
 
 .download-button {
     text-align: left;
-} 
+}
 
-.download-btn{
+.download-btn {
     font-size: 1.25rem;
     padding: 12px 17px;
     margin-right: 10px;
@@ -124,7 +135,7 @@ body {
 }
 
 .iphone {
-    width: 90%;
+    width: 80%;
     margin-top: -20rem;
 }
 
@@ -162,7 +173,7 @@ body {
     padding: 0;
 }
 
-.icons{
+.icons {
     padding: 0;
 }
 
@@ -201,7 +212,158 @@ body {
     color: #1d1d1d;
 }
 
-.reviews{
+.reviews {
     font-size: 1.4rem;
     color: #1d1d1d;
+}
+
+
+
+/* About Us Page */
+
+/* Overview */
+
+#overview {
+    background-color: #fff;
+    padding: 4% 7% 3% 10%;
+    text-align: center;
+}
+
+.overview,
+.about-us {
+    text-align: left;
+}
+
+.overview-h2,
+.about-us-h2 {
+    color: #424141;
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 3%;
+
+}
+
+.overview-text,
+.about-us-text {
+    color: #1d1d1d;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding-right: 10%;
+    line-height: 1.45;
+    margin-bottom: 2%;
+}
+
+.hr {
+    width: 40%;
+    color: #1d1d1d;
+}
+
+
+/* School Ambassadors */
+
+#school-amb {
+    background-color: #fff;
+    padding: 2% 7% 3% 10%;
+    text-align: center;
+}
+
+.school-amb-h2 {
+    text-align: left;
+    color: #424141;
+    font-size: 2.8rem;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+
+.group-avatar {
+    margin: 25px 0 0 0;
+    border: 1px #006729 solid;
+    border-radius: 7px;
+    padding: 25px 10px;
+}
+
+.view-more {
+    background-color: #006729;
+    font-size: 1rem;
+    padding: 11px 12px;
+    color: white;
+}
+
+.view-more:hover {
+    background-color: #035423;
+    font-size: 1rem;
+    padding: 11px 12px;
+    color: white;
+}
+
+
+/* Become An Ambassador */
+
+#become-an-ambassador {
+    background-color: #fff;
+    padding: 2% 7% 3% 10%;
+    text-align: center;
+}
+
+.become-an-ambassador {
+    text-align: left;
+}
+
+.amb-btn {
+    border: 2px #006729 solid;
+    color: #006729;
+    padding: 11px 14px;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.amb-btn:hover {
+    background-color: #006729;
+    padding: 11px 14px;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.amb-hr {
+    margin: 80px 0 0 0;
+    width: 40%;
+}
+
+
+/* Career */
+
+.career-h2 {
+    text-align: left;
+    color: #424141;
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 5% 10% 0;
+}
+
+.career-text {
+    color: #1d1d1d;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-right: 10%;
+    line-height: 1.45;
+    padding: 20px 10% 0px;
+    margin-bottom: 0;
+}
+
+.click-link {
+    color: #006729;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0 10%;
+    text-decoration: none;
+}
+
+.click-link:hover {
+    color: #035423;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0 10%;
+    text-decoration: none;
 }
