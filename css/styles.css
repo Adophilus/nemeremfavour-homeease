@@ -241,6 +241,40 @@ body {
     margin: 0;
 }
 
+#testimonials {
+    border: 0;
+    padding: 5px 0 40px 0;
+}
+
+.card {
+    border: 0;
+    margin: 0;
+    padding: 20px 0;
+    color: #fefefe;
+    background-color: #007a31;
+}
+
+.card {
+    text-align: center;
+}
+
+.card img {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 9rem;
+    max-height: 9rem;
+    margin: 0 auto;
+}
+
+._tm-user-role {
+    font-weight: bold;
+}
+
+._tm-header {
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+}
+
 
 /* Footer Section */
 
