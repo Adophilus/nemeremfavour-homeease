@@ -12,7 +12,7 @@ body {
 
 .container-fluid {
     background-color: #006729;
-    padding: 1% 7% 1% 7%;
+    padding: 1% 6.5% 1% 6.5%;
     border-radius: 15px;
 }
 
@@ -36,15 +36,15 @@ body {
 
 .nav-link {
     color: #efefef;
-    font-size: calc(16px + 0.13vw);
+    font-size: calc(16px + 0.155vw);
     border-radius: 5px; 
-    padding: 3px;
+    padding: 6px 9px;
     margin: 8px 0 8px 9px;
 }
 
 .nav-link:hover {
     background-color: #fff;
-    font-size: calc(16px + 0.13vw);
+    font-size: calc(16px + 0.155vw);
     border-radius: 5px;
 }
 
