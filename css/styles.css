@@ -18,7 +18,7 @@ body {
 
 .navbar-bg {
     color: #fff;
-    margin: 2.1% 2.7% 0 2.7%;
+    margin: 1.8% 2.2% 0 2.2%;
 }
 
 .nav-item {
@@ -26,7 +26,7 @@ body {
 }
 
 .favicon {
-    max-width: calc(38px + 0.2vw);
+    max-width: calc(37px + 0.2vw);
 }
 
 .cotact-nav-link {
@@ -36,15 +36,15 @@ body {
 
 .nav-link {
     color: #efefef;
-    font-size: calc(16px + 0.155vw);
-    border-radius: 5px; 
+    font-size: calc(16px + 0.195vw);
+    border-radius: 5px;
     padding: 6px 9px;
     margin: 8px 0 8px 9px;
 }
 
 .nav-link:hover {
     background-color: #fff;
-    font-size: calc(16px + 0.155vw);
+    font-size: calc(16px + 0.195vw);
     border-radius: 5px;
 }
 
@@ -57,7 +57,7 @@ body {
 
 #hero-section {
     background-color: #fff;
-    padding: 4% 11%;
+    padding: 4% 9.5%;
     text-align: center;
 }
 
@@ -238,43 +238,11 @@ body {
 .reviews {
     font-size: calc(16px + 0.24vw);
     color: #1d1d1d;
-    padding: 0 10% 5%;
+    padding: 0 10% 2.5%;
     margin: 0;
 }
 
-#testimonials {
-    border: 0;
-    padding: 5px 0 40px 0;
-}
 
-.card {
-    border: 0;
-    margin: 0;
-    padding: 20px 0;
-    color: #fefefe;
-    background-color: #007a31;
-}
-
-.card {
-    text-align: center;
-}
-
-.card img {
-    border-radius: 50%;
-    width: 100%;
-    max-width: 9rem;
-    max-height: 9rem;
-    margin: 0 auto;
-}
-
-._tm-user-role {
-    font-weight: bold;
-}
-
-._tm-header {
-    padding-bottom: 5rem;
-    padding-top: 5rem;
-}
 
 
 /* Footer Section */
@@ -316,10 +284,14 @@ body {
 .homeease-handle {
     color: #efefef;
     font: 'Poppins';
-    font-size: 17px;
-    font-weight: 550;
+    font-size: calc(16px + 0.18vw);
+    font-weight: bold;
     text-align: center;
     margin: 6px 0 0 0;
+}
+
+.services-footer{
+    margin: -70px 0 0;
 }
 
 /* Footer links */
@@ -356,7 +328,7 @@ body {
 
 .footer-distributed .footer-right {
     float: right;
-    margin-top: 6px;
+    margin: 6px 0 0;
     max-width: 180px;
 }
 
@@ -423,7 +395,7 @@ body {
     color: #424141;
     font-size: calc(35px + 0.24vw);
     font-weight: 600;
-    margin: 35px 0 15px; 
+    margin: 35px 0 15px;
     padding: 0;
 }
 
@@ -434,7 +406,7 @@ body {
     font-weight: 500;
     padding-right: 10%;
     line-height: 1.6;
-    margin: 0 0 15px; 
+    margin: 0 0 15px;
     padding: 0;
 }
 
@@ -461,7 +433,7 @@ body {
     margin: 0;
 }
 
-.amb-text{
+.amb-text {
     font-size: calc(14px + 0.2vw);
     font-weight: 400;
     padding: 8px 0;
@@ -523,7 +495,7 @@ body {
 
 /* Career */
 
-#career{
+#career {
     padding: 0 0 35px;
 }
 
@@ -561,4 +533,41 @@ body {
     font-weight: 500;
     padding: 2% 8.5% 2%;
     text-decoration: none;
+}
+
+
+/* Services Page */
+
+#our-services-pg {
+    padding: 5% 8% 4%;
+    margin: 3px 0 -75px; 
+}
+
+.services-h2 {
+    color: #fff;
+    font-size: calc(35px + 0.21vw);
+    font-weight: bold;
+    padding: 25px 0 15px;
+    margin: 0;
+}
+
+.services-text {
+    font-size: calc(15px + 0.19vw);
+    color: #fff;
+    font-weight: 300;
+    margin: 0;
+}
+
+.bg-icons {
+    text-align: center;
+}
+
+.services-icons{
+    max-width: 95%;
+    max-height: fit-content;
+    margin: 0;
+}
+
+#services-icons {
+    text-align: center;
 }
