@@ -37,7 +37,8 @@ body {
 .nav-link {
     color: #efefef;
     font-size: calc(16px + 0.13vw);
-    border-radius: 5px;
+    border-radius: 5px; 
+    padding: 3px;
     margin: 8px 0 8px 9px;
 }
 
