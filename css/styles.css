@@ -46,10 +46,13 @@ body {
     background-color: #fff;
     font-size: calc(16px + 0.195vw);
     border-radius: 5px;
+    text-decoration: underline;
 }
 
 .active {
     background-color: #fff;
+    color: #006729;
+    text-decoration: underline;
 }
 
 
@@ -105,6 +108,8 @@ body {
     background-color: #006729;
     padding: 4% 10% 5%;
     text-align: center;
+    position: relative;
+    z-index: -1;
 }
 
 .ad-video {
@@ -147,6 +152,7 @@ body {
 .who-are-we-text {
     text-align: left;
     padding: 0 0 10px;
+    margin: 30px 0 0;
 }
 
 .who-are-we-h1 {
@@ -177,8 +183,10 @@ body {
 .iphone {
     width: calc(90% + 0.5vw);
     text-align: center;
-    margin-top: -17rem;
+    margin: 0;
     padding: 0;
+    position: relative;
+    z-index: 1;
 }
 
 .iphone-div {
@@ -243,8 +251,6 @@ body {
 }
 
 
-
-
 /* Footer Section */
 
 #footer {
@@ -290,7 +296,7 @@ body {
     margin: 6px 0 0 0;
 }
 
-.services-footer{
+.services-footer {
     margin: -70px 0 0;
 }
 
@@ -539,8 +545,8 @@ body {
 /* Services Page */
 
 #our-services-pg {
-    padding: 5% 8% 4%;
-    margin: 3px 0 -75px; 
+    padding: 6% 8% 7%;
+    margin: 3px 0 -70px;
 }
 
 .services-h2 {
@@ -562,7 +568,7 @@ body {
     text-align: center;
 }
 
-.services-icons{
+.services-icons {
     max-width: 95%;
     max-height: fit-content;
     margin: 0;
@@ -571,3 +577,50 @@ body {
 #services-icons {
     text-align: center;
 }
+
+
+/* Mission & Vision */
+
+#mission {
+    padding: 4% 6%;
+    background-color: #fff;
+}
+
+.mission-h2,
+.vision-h2 {
+    font-size: calc(33px + 0.21vw);
+    font-weight: bold;
+    margin: 1% 0 0.5%;
+}
+
+.mission-text,
+.vision-text {
+    font-size: calc(16px + 0.248vw);
+    font-weight: 300;
+}
+
+.hr-1,
+.hr-2 {
+    width: 35%;
+    color: #1a1919;
+    align-items: left;
+    margin: 2% 0 4%;
+}
+
+.goals, .values {
+    font-size: calc(29px + 0.16vw);
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.value-list {
+    font-size: calc(16px + 0.248vw);
+    font-weight: 300; 
+    line-height: 1.4;
+    padding: 2px 0;
+}
+
+#core-values{
+    padding: 1.6% 6% 3.5%;
+}
+
