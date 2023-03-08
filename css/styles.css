@@ -108,8 +108,6 @@ body {
     background-color: #006729;
     padding: 4% 10% 5%;
     text-align: center;
-    position: relative;
-    z-index: -1;
 }
 
 .ad-video {
@@ -181,12 +179,10 @@ body {
 }
 
 .iphone {
-    width: calc(90% + 0.5vw);
+    width: calc(85% + 0.5vw);
     text-align: center;
     margin: 0;
     padding: 0;
-    position: relative;
-    z-index: 1;
 }
 
 .iphone-div {
@@ -460,7 +456,7 @@ body {
 
 .view-more:hover {
     background-color: #035423;
-    font-size: calc(16px + 0.18vw);
+    font-size: calc(14px + 0.162vw);
     padding: 11px 12px;
     color: white;
 }
@@ -489,7 +485,7 @@ body {
 .amb-btn:hover {
     background-color: #006729;
     padding: 11px 14px;
-    font-size: 19px;
+    font-size: calc(16px + 0.15vw);
     font-weight: 500;
 }
 
@@ -607,7 +603,8 @@ body {
     margin: 2% 0 4%;
 }
 
-.goals, .values {
+.goals,
+.values {
     font-size: calc(29px + 0.16vw);
     font-weight: bold;
     margin: 0 0 10px;
@@ -615,12 +612,159 @@ body {
 
 .value-list {
     font-size: calc(16px + 0.248vw);
-    font-weight: 300; 
+    font-weight: 300;
     line-height: 1.4;
     padding: 2px 0;
 }
 
-#core-values{
+#core-values {
     padding: 1.6% 6% 3.5%;
 }
 
+/* Blog Section */
+
+#blog-pg {
+    padding: 6% 6.5% 5.5%;
+    margin: 3px 0 0;
+}
+
+.blog-container {
+    margin: 0;
+    padding: 0;
+}
+
+.blog-h2 {
+    color: #fff;
+    font-size: calc(36px + 0.21vw);
+    font-weight: bold;
+    padding: 25px 0 15px;
+    margin: 0;
+}
+
+.blog-text {
+    font-size: calc(15px + 0.24vw);
+    color: #fff;
+    font-weight: 300;
+    margin: 0;
+    padding: 1% 2% 0 0;
+}
+
+.blogger-btn {
+    border: 1px #fff solid;
+    border-radius: 8px;
+    padding: 10px 13px;
+    margin: 70px 0 14px;
+}
+
+/* Post Section */
+
+#post {
+    padding: 4% 4.5% 5.5%;
+    background-color: #fff;
+}
+
+.icon-bar {
+    color: #1d1d1d;
+    align-items: right;
+}
+
+.post-h2 {
+    font-size: calc(33px + 0.18vw);
+    font-weight: bold;
+    margin: 0;
+}
+
+.icon-bar {
+    margin: 0;
+}
+
+.post-container {
+    margin: 0 0 30px;
+}
+
+.post-contain{
+    padding: 0;
+}
+
+.post-content{
+    padding: 7px 13px 15px;
+    margin: 0;
+}
+
+.post-text{
+    padding: 0;
+}
+
+.post-img{
+    padding: 0;
+}
+
+.post-pic {
+    border-radius: 10px;
+    margin: 0 10px 0 0;
+}
+
+.blooger-pic {
+    width: 45px;
+    height: auto;
+}
+
+.post-title {
+    margin: 0 0 8px;
+    color: #1d1d1d;
+    font-family: 'Poppins';
+    font-size: calc(24px + 0.25vw);
+    font-weight: bold;
+}
+
+.post-date{
+    margin: 0;
+    font-size: calc(14px + 0.12vw);
+    color: #303030;
+    font-weight: bold;
+    margin: 0 0 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.blog-post{
+    margin: 0 0 10px;
+    font-size: calc(15px + 0.19vw);
+}
+
+.name-of-uni{
+    margin: 0 0 8px;
+    font-style: italic;
+}
+
+.blogger-id{
+    margin: 0;
+}
+
+
+
+
+
+#testimonials .card {
+    border: 0;
+}
+
+.card {
+    text-align: center;
+}
+
+.card img {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 9rem;
+    max-height: 9rem;
+    margin: 0 auto;
+}
+
+._tm-user-role {
+    font-weight: bold;
+}
+
+._tm-header {
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+}
