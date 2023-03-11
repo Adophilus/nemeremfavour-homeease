@@ -34,30 +34,24 @@
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-bg">
         <div class="container-fluid">
-          <a href="index.html"><img src="images/favicon.svg" alt="logo" class="favicon"></a>
+          <a href="index.html"><img src="images/favicon2.svg" alt="logo" class="favicon"></a>
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon" style="background-image: url(images/menu.svg); background-repeat: no-repeat; background-size: 90%;"></span>
           </button>
 
           <!-- Navigation Menu -->
 
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav ms-auto menu">
               <li class="nav-item">
-                <a class="nav-link active" href="index.html">Home</a>
+                <a class="nav-link active-tab" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="about.html">About Us</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="services.html">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="mission.html">Mission</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="reviews.html">Reviews</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="blog.html">Blogs</a>
@@ -129,19 +123,19 @@
 
     <!-- Services -->
 
-    <div class="row col-sm-12 services-icon">
+    <div class="row services-icon">
 
-      <div class="col-sm-4 icons">
+      <div class="col-md-4 icons">
         <img src="images/hostel.svg" width="185" height="185" alt="" class="service-ico">
         <h3 class="h3-div">Rent Hostels</h3> 
       </div>
 
-      <div class="col-sm-4 icons"> 
+      <div class="col-md-4 icons"> 
         <img src="images/roomate.svg" width="185" height="185" alt="" class="service-ico">
         <h3 class="h3-div">Find Roommates</h3>
       </div>
 
-      <div class="col-sm-4 icons">
+      <div class="col-md-4 icons">
         <img src="images/trade.svg" width="185" height="185" alt="" class="service-ico">
         <h3 class="h3-div">Trade</h3> 
       </div>
@@ -155,7 +149,7 @@
   <!-- Comments and Reviews -->
 
   <section>
-    <div style="background-image: url(images/background.svg); background-size: contain; background-size: 20%;">
+    <div style="background-image: url(images/background.svg); background-size: contain; background-size: 20%; background-color: #F5FEF9;">
 
       <h2 class="comments-h2">Comments and Review</h2>
       <p class="reviews">What do you think about the app?</p>
@@ -165,44 +159,27 @@
   </section>
 
 
-  <!-- Footer -->
+  <!-- Footer Section -->
+  <footer class="site-footer">
+     
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text"><img src="images/favicon.svg" class="footer-icon" width="30" height="30" alt="homeease-logo"> COPYRIGHT OF HOMEEASE</p>
+        </div>
 
-  <section id="footer">
-
-		<footer class="footer-distributed">
-
-			<div class="footer-right">
-
-				<a href="#"><i class="fa fa-facebook"></i></a>
-				<a href="#"><i class="fa fa-twitter"></i></a>
-				<a href="#"><i class="fa fa-instagram"></i></a>
-				<a href="#"><i class="fa fa-whatsapp"></i></a> 
-        <p class="homeease-handle">@homeease_ng</p>
-
-			</div>
-
-			<div class="footer-left">
-
-				<p class="footer-links">
-					<a class="link-1" href="index.html">Home</a>
-
-					<a href="about.html">About</a>
-
-					<a href="services.html">Services</a>
-
-					<a href="mission.html">Mission</a>
-
-					<a href="reviews.html">Review</a>
-
-					<a href="blog.html">Blogs</a>
-				</p>
-
-				<p><img src="images/favicon.svg" alt="logo" class="footer-logo"> HOMEEASE &copy; 2023</p>
-			</div>
-
-		</footer>
-
-    </section>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="email" href="#"><i class="fa-regular fa-envelope"></i></a></li>
+            <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="whatsapp" href="#"><i class="fa fa-whatsapp"></i></a></li> 
+            <li class="handle-text">@homeease_ng</li> 
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
 
 </body>
 </html>
