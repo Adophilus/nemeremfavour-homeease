@@ -61,8 +61,9 @@ body {
 
 #hero-section {
     background-color: #F5FEF9;
-    padding: 2.5% 9.5% 4%;
+    padding: 2.5% 9.3% 4%;
     text-align: center;
+    border-top: 1px solid #006729;
 }
 
 .heading-section {
@@ -75,16 +76,16 @@ body {
 }
 
 .heading-text {
-    font-size: calc(35px + 0.2vw);
+    font-size: calc(40px + 0.21vw);
     font-weight: 600;
     line-height: 1.3;
-    padding: 0 15px 20px 0;
+    padding: 0 20px 20px 0;
     margin: 0;
 }
 
 .heading-subtext {
-    font-size: calc(16px + 0.2vw);
-    line-height: 1.4;
+    font-size: calc(17.5px + 0.2vw);
+    line-height: 1.42;
     font-weight: 200;
     padding: 0 10px 20px 0;
     margin: 0;
@@ -95,7 +96,6 @@ body {
     font-size: calc(14px + 0.21vw);
     padding: 2% 3%;
     color: white;
-    font-weight: 400;
 }
 
 .learn-more:hover {
@@ -103,21 +103,14 @@ body {
     font-size: calc(14px + 0.21vw);
     padding: 2% 3%;
     color: white;
-    font-weight: 400;
 }
 
-.hero-image {
-    width: calc(90% + 1.5vw);
+.hero-img {
+    width: calc(70% + 1vw);
+    position: relative;
+    left: 80px;
     height: auto;
     text-align: center;
-}
-
-@media (max-width:629px) {
-
-    .hero-image,
-    .iphone {
-        display: none;
-    }
 }
 
 
@@ -141,7 +134,7 @@ body {
     padding: 15px 0 5px;
     color: #fff;
     text-align: left;
-    font-size: calc(25px + 0.2vw);
+    font-size: calc(35px + 0.2vw);
     line-height: 1.3;
     margin: 0;
 }
@@ -414,7 +407,7 @@ body {
 
 #overview {
     background-color: #F5FEF9;
-    padding: 2.2% 8% 2.5%;
+    padding: 2.2% 7% 2.5%;
     text-align: center;
 }
 
@@ -424,18 +417,24 @@ body {
 }
 
 .overview-h2,
-.about-us-h2 {
+.about-us-h2,
+.mission-h2,
+.vision-h2 {
     color: #424141;
-    font-size: calc(33px + 0.2vw);
+    font-size: calc(32px + 0.2vw);
     font-weight: 600;
-    margin: 35px 0 15px;
+    text-align: left;
+    margin: 30px 0 15px;
     padding: 0;
 }
 
 .overview-text,
-.about-us-text {
+.about-us-text,
+.mission-text,
+.vision-text {
+    text-align: left;
     color: #1d1d1d;
-    font-size: calc(16px + 0.21vw);
+    font-size: calc(16px + 0.18vw);
     font-weight: 500;
     padding-right: 10%;
     line-height: 1.4;
@@ -612,27 +611,6 @@ body {
     text-align: center;
 }
 
-
-/* Mission & Vision */
-
-#mission {
-    padding: 4% 6%;
-    background-color: #fff;
-}
-
-.mission-h2,
-.vision-h2 {
-    font-size: calc(33px + 0.21vw);
-    font-weight: bold;
-    margin: 1% 0 0.5%;
-}
-
-.mission-text,
-.vision-text {
-    font-size: calc(16px + 0.248vw);
-    font-weight: 300;
-}
-
 .hr-1,
 .hr-2 {
     width: 35%;
@@ -646,6 +624,7 @@ body {
     font-size: calc(29px + 0.16vw);
     font-weight: bold;
     margin: 0 0 10px;
+    text-align: left;
 }
 
 .value-list {
@@ -653,10 +632,11 @@ body {
     font-weight: 300;
     line-height: 1.4;
     padding: 2px 0;
+    text-align: left;
 }
 
 #core-values {
-    padding: 1.6% 6% 3.5%;
+    padding: 1.6% 7% 3.5%;
 }
 
 /* Blog Section */
@@ -884,28 +864,50 @@ input {
 
 
 
+/* Media Queries */
 
-#testimonials .card {
-    border: 0;
-}
+@media (max-width:629px) {
 
-.card {
-    text-align: center;
-}
+    #hero-section {
+        background-color: #F5FEF9;
+        padding: 8px 33px 15px;
+        text-align: center;
+        border-top: 1px solid #006729;
+    }
 
-.card img {
-    border-radius: 50%;
-    width: 100%;
-    max-width: 9rem;
-    max-height: 9rem;
-    margin: 0 auto;
-}
+    .head-text {
+        padding: 70px 0 60px;
+        margin: 0 0 20px;
+    }
 
-._tm-user-role {
-    font-weight: bold;
-}
+    .heading-text {
+        font-size: 27px;
+        line-height: 1.35;
+    }
 
-._tm-header {
-    padding-bottom: 5rem;
-    padding-top: 5rem;
+    .heading-subtext {
+        font-size: 15px;
+        padding: 0 0 20px;
+    }
+
+    .learn-more {
+        font-size: 14px;
+        padding: 7px 13px;
+    }
+
+    .hero-img,
+    .iphone {
+        display: none;
+    }
+
+    #get-apps {
+        background-color: #006729;
+        padding: 8px 33px 15px;
+        text-align: center;
+    }
+
+    .get-our-app-text {
+        font-size: 22px;
+    }
+
 }
