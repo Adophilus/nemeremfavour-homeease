@@ -28,12 +28,12 @@ body {
 }
 
 .cotact-nav-link {
-    border: 3.5px solid #006729;
+    border: 3.5px solid #00451c;
     border-radius: 7px;
 }
 
 .nav-link {
-    color: #006729;
+    color: #00451c;
     font-size: calc(15px + 0.2vw);
     border-radius: 5px;
     padding: 6px 8px;
@@ -41,7 +41,7 @@ body {
 }
 
 .nav-link:hover {
-    background-color: #006729;
+    background-color: #00451c;
     color: #fff;
     font-size: calc(15px + 0.2vw);
     border-radius: 5px;
@@ -49,7 +49,7 @@ body {
 
 .active-tab {
     color: #ffffff;
-    background-color: #006729
+    background-color: #00451c;
 }
 
 .menu {
@@ -61,9 +61,9 @@ body {
 
 #hero-section {
     background-color: #F5FEF9;
-    padding: 2.5% 9.3% 2.1%;
+    padding: 35px 100px 30px 140px;
     text-align: center;
-    border-top: 1px solid #006729;
+    border-top: 1px solid #00451c;
     position: relative;
     z-index: 0;
 }
@@ -86,24 +86,24 @@ body {
 }
 
 .heading-subtext {
-    font-size: calc(17.5px + 0.2vw);
-    line-height: 1.42;
+    font-size: calc(16px + 0.23vw);
+    line-height: 1.5;
     font-weight: 200;
-    padding: 0 10px 20px 0;
+    padding: 0 5px 30px 0;
     margin: 0;
 }
 
 .learn-more {
-    background-color: #006729;
-    font-size: calc(14px + 0.21vw);
-    padding: 2% 3%;
+    background-color: #00451c;
+    font-size: calc(14px + 0.26vw);
+    padding: 12px 20px;
     color: white;
 }
 
 .learn-more:hover {
     background-color: #035423;
-    font-size: calc(14px + 0.21vw);
-    padding: 2% 3%;
+    font-size: calc(14px + 0.26vw);
+    padding: 12px 20px;
     color: white;
 }
 
@@ -119,7 +119,7 @@ body {
 /* Get Our Apps */
 
 #get-apps {
-    background-color: #006729;
+    background-color: #00451c;
     padding: 0 10% 5%;
     text-align: center;
 }
@@ -411,7 +411,7 @@ body {
     background-color: #F5FEF9;
     padding: 2.2% 7% 10px;
     text-align: left;
-    border-top: 1px solid #006729;
+    border-top: 1px solid #00451c;
 }
 
 .overview-h2,
@@ -427,8 +427,8 @@ body {
 .about-us-text,
 .mission-text,
 .vision-text {
-    font-size: calc(17px + 0.12vw);
-    line-height: 1.35;
+    font-size: calc(17px + 0.19vw);
+    line-height: 1.6;
     margin: 0 0 20px;
 }
 
@@ -469,7 +469,7 @@ body {
 }
 
 .view-more {
-    background-color: #006729;
+    background-color: #00451c;
     margin: 25px 0 0;
     font-size: calc(14px + 0.16vw);
     padding: 11px 12px;
@@ -498,16 +498,16 @@ body {
 }
 
 .amb-btn {
-    border: 2px #006729 solid;
-    color: #006729;
-    margin: 3% 9% 2.5%;
+    border: 2px #00451c solid;
+    color: #00451c;
+    margin: 1.3rem 0 0;
     padding: 11px 14px;
     font-size: calc(16px + 0.15vw);
     font-weight: 500;
 }
 
 .amb-btn:hover {
-    background-color: #006729;
+    background-color: #00451c;
     margin: 3 9% 2.5%;
     padding: 11px 14px;
     font-size: calc(16px + 0.15vw);
@@ -581,8 +581,8 @@ body {
 }
 
 .value-list {
-    font-size: calc(17px + 0.12vw);
-    line-height: 1.35;
+    font-size: calc(17px + 0.19vw);
+    line-height: 1.6;
     padding: 2px 0;
     text-align: left;
 }
@@ -809,7 +809,7 @@ input {
 }
 
 .signin-text {
-    color: #006729;
+    color: #00451c;
     font-weight: bold;
     text-decoration: none;
 }
@@ -848,9 +848,9 @@ input {
 
     #hero-section {
         background-color: #F5FEF9;
-        padding: 8px 33px 13px;
+        padding: 8px 30px 13px;
         text-align: center;
-        border-top: 1px solid #006729;
+        border-top: 1px solid #00451c;
     }
 
     .head-text {
@@ -883,7 +883,7 @@ input {
     }
 
     #get-apps {
-        background-color: #006729;
+        background-color: #00451c;
         padding: 8px 33px 15px;
         text-align: center;
     }
