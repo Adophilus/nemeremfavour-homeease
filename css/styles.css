@@ -1,9 +1,22 @@
-@import url('https://fonts.cdnfonts.com/css/satoshi');
-
 body {
-    font-family: 'Satoshi';
+    font-family: 'Poppins';
     margin: 0;
 }
+
+/* Animations */
+
+.fade-on-scroll {
+    opacity: 0;
+    transition: opacity 1.2s ease-in;
+    animation-delay: 0.83s;
+} 
+
+.scroll-fade {
+    opacity: 0;
+    transition: opacity 1.3s ease-in;
+    animation-delay: 0.8s;
+}
+
 
 /* Navigation Menu */
 
@@ -12,7 +25,7 @@ body {
 }
 
 .container-fluid {
-    background-color: #ffffff;
+    background-color: #F5FEF9;
     padding: 20px 6.5% 15px 6.5%;
 }
 
@@ -29,33 +42,30 @@ body {
 }
 
 .contact-nav-link {
+    border: 3px solid #00451c;
     border-radius: 8px;
-    color: #fff;
-    background-color: #006729;
 }
 
 .nav-link {
     color: #00451c;
-    font-size: calc(16px + 0.22vw);
-    font-weight: 500;
+    font-size: calc(16px + 0.2vw);
     border-radius: 5px;
     padding: 7px 9px;
-    margin: 6px 0 6px 22px;
+    margin: 6px 0 6px 9px;
     -webkit-transition: width 3s;
     transition: width 3s;
 }
 
 .nav-link:hover {
-    background-color: #006729;
-    font-weight: 500;
+    background-color: #00451c;
     color: #fff;
-    font-size: calc(15px + 0.22vw);
+    font-size: calc(16px + 0.2vw);
     border-radius: 5px;
 }
 
 .active-tab {
     color: #ffffff;
-    background-color: #006729;
+    background-color: #00451c;
 }
 
 .menu {
@@ -66,10 +76,12 @@ body {
 /* Hero Section */
 
 #hero-section {
-    background-color: #fafffc;
-    padding: 4rem 9rem 6.3rem;
+    background-color: #F5FEF9;
+    padding: 35px 100px 40px 140px;
     text-align: center;
-    border-top: 1px solid #006729;
+    border-top: 1px solid #00451c;
+    position: relative;
+    z-index: 0;
 }
 
 .heading-section {
@@ -82,305 +94,194 @@ body {
 }
 
 .heading-text {
-    color: #303030;
-    font-size: calc(35px + 0.25vw);
-    font-weight: 900;
-    line-height: 1.2;
-    padding: 0 20px 15px 0;
+    font-size: calc(40px + 0.21vw);
+    font-weight: 600;
+    line-height: 1.3;
+    padding: 0 20px 20px 0;
     margin: 0;
 }
 
 .heading-subtext {
-    color: #303030;
-    font-size: calc(17px + 0.21vw);
-    line-height: 1.4;
-    font-weight: 500;
+    font-size: calc(16px + 0.23vw);
+    line-height: 1.5;
+    font-weight: 200;
     padding: 0 5px 30px 0;
     margin: 0;
 }
 
-.get-btn {
-    background-color: #1F1F1F;
-    font-size: calc(14px + 0.22vw);
-    padding: 10px 16px;
-    margin: 0 7px 0 0;
+.learn-more {
+    background-color: #00451c;
+    font-size: calc(14px + 0.26vw);
+    padding: 12px 20px;
     color: white;
-    font-weight: 200;
-    margin-bottom: 7px;
-
-    transition-property: transform;
-    transition-duration: 0.4s;
-    transition-timing-function: ease-in;
 }
 
-.get-btn:hover {
-    background-color: #1f1e1e;
-    font-size: calc(14px + 0.22vw);
-    padding: 10px 16px;
-    margin: 0 7px 0 0;
+.learn-more:hover {
+    background-color: #035423;
+    font-size: calc(14px + 0.26vw);
+    padding: 12px 20px;
     color: white;
-    font-weight: 200;
-    margin-bottom: 7px;
-
-    transform: translateY(-10px);
 }
 
 .hero-img {
-    width: calc(85% + 1vw);
+    width: calc(70% + 1vw);
+    position: relative;
+    left: 80px;
     height: auto;
     text-align: center;
-
-    /* Bounce Effect */
-
-    top: 0;
-    left: 0;
-    animation: bounce 1.3s infinite;
 }
 
-@keyframes bounce {
-    0% {
-        transform: translateY(0);
-    }
 
-    50% {
-        transform: translateY(-5px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
-/* Video Ad */
+/* Get Our Apps */
 
 #get-apps {
-    background-color: #006729;
+    background-color: #00451c;
     padding: 0 10% 5%;
     text-align: center;
 }
 
-
-.video-ad {
-    padding-bottom: 40px;
-    margin: 0;
-}
-
 .ad-video {
     text-align: center;
-    margin: -4rem 0 0 0;
+    margin: -5rem 0 0 0;
     padding: 0 0 15px 0;
     border-radius: 10px;
     position: relative;
     z-index: 1;
 }
 
-.play-more {
-    color: white;
-    font-size: calc(16px + 0.2vw);
-}
-
-.service-icon {
-    color: #ffffff;
-}
-
-.service-icon h1 {
-    font-size: calc(31px + 0.2vw);
-    font-weight: 600;
-}
-
-.service-icon p {
-    font-size: calc(17px + 0.23vw);
-    font-weight: 400;
-    line-height: 1.6rem;
-    padding: 0 20px 0;
-}
-
-.serviceicon {
-    padding-bottom: 1.5rem;
+.get-our-app-text {
+    padding: 15px 0 5px;
+    color: #fff;
+    text-align: left;
+    font-size: calc(35px + 0.2vw);
+    line-height: 1.3;
     margin: 0;
 }
+
+.download-button {
+    text-align: left;
+    padding: 10px 0 0;
+}
+
+.download-btn {
+    font-size: calc(15px + 0.21vw);
+    padding: 10px 16px;
+    margin: 0 10px 0 0;
+}
+
 
 /* Who are we? */
 
 #who-are-we {
     text-align: center;
-    background-color: #fafffc;
-    padding: 4.3rem 10rem 2rem;
+    background-color: #F5FEF9;
+    padding: 4% 10%;
 }
 
 .who-are-we-text {
     text-align: left;
     padding: 0 0 10px;
-    margin: 35px 0 0;
+    margin: 30px 0 0;
 }
 
 .who-are-we-h1 {
-    font-size: calc(35px + 0.23vw);
-    color: #006729;
-    font-weight: 800;
-    padding: 25px 0 15px;
+    font-size: calc(29px + 0.21vw);
+    font-family: 'Poppins';
+    color: #1d1d1d;
+    font-weight: 600;
+    padding: 25px 0 10px;
+    margin: 0;
+}
+
+.who-are-we-h2 {
+    font-size: calc(29px + 0.21vw);
+    font-family: 'Poppins';
+    color: #1d1d1d;
+    font-weight: 600;
+    padding: 35px 0 10px;
     margin: 0;
 }
 
 .who-are-we-p {
-    font-size: calc(19px + 0.25vw);
-    padding: 0 1.6rem 0 0;
-    font-weight: 500;
+    font-size: calc(16px + 0.21vw);
+    padding: 0 10px 0 0;
+    font-weight: 400;
     margin: 0;
-    line-height: 1.75rem;
 }
 
-.whoarewe {
-    width: calc(70% + 0.5vw);
-    height: auto;
+.iphone {
+    width: calc(85% + 0.5vw);
     text-align: center;
-    margin: 0;
+    margin: -175px 0 0;
     padding: 0;
 }
 
-.whoarewe-div {
+.iphone-div {
     padding: 0;
     margin: 0;
 }
 
-/* Career */
 
-#careers {
-    text-align: center;
-    background-color: #fafffc;
-    padding: 2.5rem 7rem 4rem;
+/* Services */
+
+.services-icon {
+    padding: 0;
 }
 
-.careers-text {
+.icons {
+    padding: 0;
+}
+
+.service-ico {
+    width: calc(95% + 0.15vw);
+    margin: 20px 0 0;
+}
+
+.h3-div {
+    text-align: center;
+    font-size: calc(17px + 0.25vw);
+    padding: 0;
+    margin: 0;
+}
+
+.hr-services {
+    margin: 35px 0 5px;
+    padding: 0;
+}
+
+
+/* Comment & Reviews */
+
+#comments {
+    padding: 0 9% 7%;
+    text-align: center;
+}
+
+.comments {
     text-align: left;
-    padding: 0 0 10px;
-    margin: 35px 0 0;
 }
 
-.careers-h1 {
-    font-size: calc(35px + 0.25vw);
-    color: #006729;
-    font-weight: 800;
-    padding: 25px 0 15px;
-    margin: 0;
-}
-
-.careers-p {
-    font-size: calc(18px + 0.23vw);
-    padding: 0.5rem 0 0;
+.comments-h2 {
+    font-size: calc(22px + 0.24vw);
     font-weight: 500;
-    margin: 0;
-    line-height: 1.45;
+    color: #424141;
+    margin: 0 0 10px;
+    padding: 0 10%;
 }
 
-.careers {
-    width: calc(70% + 0.5vw);
-    height: auto;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-.careers-div {
-    padding: 0;
+.reviews {
+    font-size: calc(16px + 0.24vw);
+    color: #1d1d1d;
+    padding: 0 9%;
     margin: 0;
 }
 
-/* Become an Ambassador */
 
-.amb-btn {
-    color: #fff;
-    background-color: #006729;
-    padding: 10px 16px;
-    font-size: calc(16px + 0.23vw);
-    margin: 2.5rem 0 0;
-    font-weight: 500;
-
-    transition-property: transform;
-    transition-duration: 0.4s;
-    transition-timing-function: ease-in;
-}
-
-.amb-btn:hover {
-    color: #fff;
-    background-color: #00451c;
-    transform: translateY(-12px);
-}
-
-/* Testimonals */
-
-#testimonials {
-    text-align: center;
-    background-color: #fafffc;
-    padding: 2.5rem 7rem 4rem;
-}
-
-.testimonals-head {
-    color: #006729;
-    text-align: center;
-    font-size: calc(45px + 0.2vw);
-    font-weight: 700;
-    padding-bottom: 20px;
-}
-
-
-/* About Us */
-
-#overview {
-    background-color: #fafffc;
-    padding: 2rem 4rem 2rem;
-}
-
-.overview-h2,
-.mission-h2,
-.vision-h2,
-.goals,
-.values {
-    font-size: 1.8rem;
-    font-weight: 600;
-}
-
-.overview-text,
-.mission-text,
-.vision-text,
-.list-of-value {
-    font-size: calc(17px + 0.21vw);
-    line-height: 1.4;
-}
-
-#core-values,
-#school-amb {
-    padding: 2rem 4rem 2rem;
-}
-
-.group-avatar {
-    padding: 2rem 1rem;
-}
-
-
-/* Coming Soon */
-
-.cs-btn {
-    background-color: #fafffc;
-    color: #006729;
-    font-size: calc(16px + 0.2vw);
-    margin: 5px 0;
-    padding: 13px 24px;
-    font-weight: 500;
-}
-
-.coming-soon {
-    font-size: 2.3rem;
-    font-weight: 600;
-    color: #fafffc;
-    text-align: center;
-}
-
-/* Footer */
+/* Footer Section */
 
 .site-footer {
-    background-color: #006729;
-    padding: 40px 10px 25px;
+    background-color: #1E1E1E;
+    padding: 40px 0 20px;
     font-size: cal(15px + 0.15vw);
     line-height: 24px;
     color: #fff;
@@ -400,8 +301,35 @@ body {
     text-decoration: none;
 }
 
+.footer-links {
+    padding-left: 0;
+    list-style: none
+}
+
+.footer-links li {
+    display: block
+}
+
+.footer-links a {
+    color: #fff
+}
+
 .footer-links.inline li {
     display: inline-block
+}
+
+.site-footer .social-icons {
+    text-align: right
+}
+
+.site-footer .social-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 0 0 3px;
+    border-radius: 100%;
+    background-color: #33353d;
+    color: #fff;
 }
 
 .handle-text {
@@ -413,78 +341,75 @@ body {
     font-size: calc(17px + 0.18vw);
     color: #fff;
     margin: 0;
-    font-weight: 900;
 }
 
-.copyright-subtext {
-    color: #fff;
-    font-size: calc(15px + 0.23vw);
-    line-height: 1.4;
-    font-weight: 400;
-    margin: 0;
-    padding: 1.2rem 0;
-}
-
-.homeease-handle {
-    font-weight: 600;
-    font-size: calc(16px + 0.17vw);
-}
-
-.socials {
-    padding: 0 4px 0 0;
-}
-
-/* Quick Links */
-
-.quick-links h2 {
-    margin: 0;
-    padding: 0 0 18px;
-    font-weight: 700;
-    font-size: calc(22px + 0.22vw);
-}
-
-.links-h2 {
-    text-align: left;
-    margin: 0;
-    padding: 0;
-}
-
-.footer-lin {
-    padding: 0;
-}
-
-.contact-us-list {
-    padding: 0;
-}
-
-.footer-links {
-    text-decoration: none;
-    font-size: calc(16px + 0.22vw);
-    line-height: 1.6;
-    font-weight: 400;
-}
-
-ul {
-    list-style-type: none;
-}
-
-.contact-us-list {
-    font-size: calc(16px + 0.22vw);
-    font-weight: 400;
-    line-height: 1.4;
-}
-
-.contact-us-list a {
-    text-decoration: none;
-}
-
-@media (max-width:600px) {
-    .site-footer {
-        padding-bottom: 0
+@media (max-width:991px) {
+    .site-footer [class^=col-] {
+        margin-bottom: 30px
     }
 }
 
-@media (max-width:600px) {
+@media (max-width:767px) {
+    .site-footer {
+        padding-bottom: 0
+    }
+
+    .site-footer .copyright-text,
+    .site-footer .social-icons {
+        text-align: center
+    }
+}
+
+.social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-bottom: 4px
+}
+
+.social-icons li.title {
+    margin-right: 15px;
+    text-transform: uppercase;
+    color: #96a2b2;
+    font-weight: 700;
+    font-size: 13px
+}
+
+.social-icons a {
+    background-color: #eceeef;
+    color: #818a91;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+    color: #fff;
+    background-color: #29aafe
+}
+
+.social-icons.size-sm a {
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
+    font-size: 14px
+}
+
+@media (max-width:767px) {
     .social-icons li.title {
         display: block;
         margin-right: 0;
@@ -493,8 +418,436 @@ ul {
 }
 
 
-/* Mobile View */
-@media (max-width:600px) {
+
+/* About Us Page */
+
+/* Overview */
+
+#overview {
+    background-color: #F5FEF9;
+    padding: 2.2% 7% 10px;
+    text-align: left;
+    border-top: 1px solid #00451c;
+}
+
+.overview-h2,
+.about-us-h2,
+.mission-h2,
+.vision-h2 {
+    font-size: calc(33px + 0.12vw);
+    margin: 30px 0 5px;
+    font-weight: 600;
+}
+
+.overview-text,
+.about-us-text,
+.mission-text,
+.vision-text {
+    font-size: calc(17px + 0.19vw);
+    line-height: 1.6;
+    margin: 0 0 20px;
+}
+
+.hr {
+    width: 40%;
+    color: #1d1d1d;
+    align-items: left;
+    margin: 8px 0;
+}
+
+
+/* School Ambassadors */
+
+#school-amb {
+    background-color: #F5FEF9;
+    padding: 2% 8% 2.5%;
+    text-align: center;
+}
+
+.school-amb-h2 {
+    text-align: left;
+    color: #424141;
+    font-size: calc(32px + 0.15vw);
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+
+.amb-text {
+    font-size: calc(14px + 0.2vw);
+    font-weight: 400;
+    padding: 8px 0;
+}
+
+.group-avatar {
+    margin: 0;
+    padding: 50px 0 25px;
+}
+
+.view-more {
+    background-color: #00451c;
+    margin: 25px 0 0;
+    font-size: calc(14px + 0.16vw);
+    padding: 11px 12px;
+    color: white;
+}
+
+.view-more:hover {
+    background-color: #035423;
+    font-size: calc(14px + 0.162vw);
+    padding: 11px 12px;
+    color: white;
+}
+
+
+/* Become An Ambassador */
+
+#become-an-ambassador {
+    background-color: #F5FEF9;
+    text-align: center;
+}
+
+.become-an-ambassador {
+    margin: 10px 0 0 0;
+    padding: 0 0 10px 0;
+    text-align: left;
+}
+
+.amb-btn {
+    border: 2px #00451c solid;
+    color: #00451c;
+    margin: 1.3rem 0 0;
+    padding: 11px 14px;
+    font-size: calc(16px + 0.15vw);
+    font-weight: 500;
+}
+
+.amb-btn:hover {
+    background-color: #00451c;
+    margin: 3 9% 2.5%;
+    padding: 11px 14px;
+    font-size: calc(16px + 0.15vw);
+    font-weight: 500;
+}
+
+.amb-hr {
+    margin: 40px 0 0 0;
+    width: 40%;
+}
+
+.hr-amb {
+    margin: 0;
+}
+
+
+
+/* Services Page */
+
+#our-services-pg {
+    padding: 6% 8% 7%;
+    margin: 3px 0 -70px;
+}
+
+.services-h2 {
+    color: #fff;
+    font-size: calc(35px + 0.21vw);
+    font-weight: bold;
+    padding: 25px 0 15px;
+    margin: 0;
+}
+
+.services-text {
+    font-size: calc(15px + 0.19vw);
+    color: #fff;
+    font-weight: 300;
+    margin: 0;
+}
+
+.bg-icons {
+    text-align: center;
+}
+
+.services-icons {
+    max-width: 95%;
+    max-height: fit-content;
+    margin: 0;
+}
+
+#services-icons {
+    text-align: center;
+}
+
+.hr-2 {
+    width: 35%;
+    color: #1a1919;
+    align-items: left;
+    margin: 2% 0 4%;
+}
+
+.goals,
+.values {
+    font-size: calc(29px + 0.19vw);
+    font-weight: 500;
+    margin: 0 0 10px;
+    text-align: left;
+}
+
+.list-of-value {
+    padding: 0 0 0 20px;
+}
+
+.value-list {
+    font-size: calc(17px + 0.19vw);
+    line-height: 1.6;
+    padding: 2px 0;
+    text-align: left;
+}
+
+#core-values {
+    padding: 1.6% 7% 3.5%;
+}
+
+/* Blog Section */
+
+#blog-pg {
+    padding: 6% 6.5% 5.5%;
+    margin: 3px 0 0;
+}
+
+.blog-container {
+    margin: 0;
+    padding: 0;
+}
+
+.blog-h2 {
+    color: #fff;
+    font-size: calc(36px + 0.21vw);
+    font-weight: bold;
+    padding: 25px 0 15px;
+    margin: 0;
+}
+
+.blog-text {
+    font-size: calc(15px + 0.24vw);
+    color: #fff;
+    font-weight: 300;
+    margin: 0;
+    padding: 1% 2% 0 0;
+}
+
+.blogger-btn {
+    border: 1px #fff solid;
+    border-radius: 8px;
+    padding: 10px 13px;
+    margin: 70px 0 14px;
+}
+
+/* Post Section */
+
+#post {
+    padding: 4% 4.5% 5.5%;
+    background-color: #fff;
+}
+
+.icon-bar {
+    color: #1d1d1d;
+    align-items: right;
+}
+
+.post-h2 {
+    font-size: calc(33px + 0.18vw);
+    font-weight: bold;
+    margin: 0;
+}
+
+.icon-bar {
+    margin: 0;
+}
+
+.post-container {
+    margin: 0 0 30px;
+}
+
+.post-contain {
+    padding: 0;
+    margin: 0 40px;
+}
+
+.post-content {
+    padding: 7px 5px 15px;
+    margin: 0;
+}
+
+.post-text {
+    margin: 0;
+    padding: 0 10px;
+    text-align: left;
+}
+
+.post-img {
+    padding: 0;
+}
+
+.post-pic {
+    border-radius: 10px;
+    margin: 0 10px 0 0;
+}
+
+.blooger-pic {
+    width: 45px;
+    height: auto;
+}
+
+.post-title {
+    margin: 0 0 8px;
+    color: #1d1d1d;
+    font-family: 'Poppins';
+    font-size: calc(24px + 0.25vw);
+    font-weight: bold;
+}
+
+.post-date {
+    margin: 0;
+    font-size: calc(14px + 0.12vw);
+    color: #1d1d1d;
+    font-weight: bold;
+    margin: 0 0 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.blog-post {
+    margin: 0 0 10px;
+    font-size: calc(15px + 0.19vw);
+    color: #1a1919;
+}
+
+.name-of-uni {
+    margin: 0 0 8px;
+    font-style: italic;
+}
+
+.blogger-id {
+    margin: 0;
+    text-align: right;
+}
+
+.post-link {
+    text-decoration: none;
+}
+
+#blogger {
+    padding: 4% 4.5% 5.5%;
+    background-color: #fff;
+}
+
+.back-to-blog {
+    color: #035423;
+    font-size: calc(16px + 0.16);
+    text-decoration: none;
+    text-align: left;
+}
+
+.blogger-img {
+    padding: 0;
+}
+
+.blogger-img-content {
+    text-align: left;
+    padding: 150px 50px;
+    border-radius: 10px;
+}
+
+.blogger-h2 {
+    color: #fff;
+    font-weight: 450;
+    line-height: 1.3;
+    letter-spacing: 0.7;
+    margin: 0 0 15px 0;
+    padding: 0;
+    font-size: calc(33px + 0.17vw);
+}
+
+.blogger-text {
+    font-size: cal(17px + 0.25vw);
+    color: #fefefe;
+    padding: 0 180px 0 0;
+}
+
+.signup-box {
+    width: 30%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    letter-spacing: .1rem;
+    font-family: 'Poppins';
+    background-color: #fff;
+}
+
+.sign-up-box {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: #eee 0 0 10px 1px;
+
+}
+
+label {
+    margin: 10px 0px 5px 5px;
+}
+
+input {
+    height: 40px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 10px;
+    background: #eee;
+}
+
+.signup-btn {
+    width: 100px;
+    height: 50px;
+    background-color: #035423;
+    border: none;
+    border-radius: 15px;
+    margin: 40px 0 0 0;
+    color: white;
+    font-weight: 400;
+}
+
+.signin-p {
+    margin: 10px 0 0 0;
+    font-size: calc(15px + 0.2vw);
+    font-weight: 400;
+}
+
+.signin-text {
+    color: #00451c;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.vh-100 {
+    height: 50vh;
+    min-height: 50vh;
+}
+
+.coming-soon {
+    color: #ffff;
+    margin: 0 0 30px;
+}
+
+.cs-btn {
+    padding: 13px 16px;
+}
+
+
+/* Media Queries */
+
+@media (max-width:629px) {
 
     .container-fluid {
         padding: 18px 20px 15px;
@@ -511,148 +864,115 @@ ul {
     }
 
     #hero-section {
-        background-color: #fafffc;
-        padding: 10px 30px 75px;
+        background-color: #F5FEF9;
+        padding: 8px 30px 13px;
         text-align: center;
-        border-top: 1px solid #006729;
+        border-top: 1px solid #00451c;
     }
 
     .head-text {
-        padding: 40px 0 40px;
-        margin: 0;
+        padding: 70px 0 60px;
+        margin: 0 0 20px;
     }
 
     .heading-text {
-        font-size: calc(25px + 0.1vw);
-        line-height: 1.3;
-        padding: 0 0 17px 0;
-        margin: 0;
+        font-size: 27px;
+        line-height: 1.35;
     }
 
     .heading-subtext {
-        font-size: calc(15px + 0.22vw);
+        font-size: 15px;
         padding: 0 0 20px;
     }
 
-    .get-btn {
-        background-color: #1F1F1F;
-        font-size: calc(14px + 0.2vw);
-        padding: 8px 14px;
-        margin: 0 5px 0 0;
-        color: white;
-        font-weight: 200;
-        margin-bottom: 7px;
+    .learn-more {
+        font-size: 14px;
+        padding: 7px 13px;
     }
 
-    .get-btn:hover {
-        background-color: #1f1e1e;
-        font-size: calc(14px + 0.2vw);
-        padding: 8px 14px;
-        margin: 0 5px 0 0;
-        color: white;
-        font-weight: 200;
-        margin-bottom: 7px;
+    .hero-img,
+    .iphone {
+        display: none;
     }
 
-    .hero-img {
-        width: calc(75% + 1vw);
-        height: auto;
-        text-align: center;
-    }
-
-    .video-ad {
-        padding-bottom: 25px;
-        margin: 0;
-    }
-
-    .service-icon h1 {
-        font-size: calc(26px + 0.2vw);
-        font-weight: 600;
-    }
-
-    .service-icon p {
-        font-size: calc(17px + 0.23vw);
-        font-weight: 400;
-        line-height: 1.4;
-        padding: 0 10px;
-        margin: 0 0 35px;
+    .download-btn {
+        font-size: 16px;
     }
 
     #get-apps {
-        background-color: #006729;
-        padding: 8px 30px 15px;
+        background-color: #00451c;
+        padding: 8px 33px 15px;
         text-align: center;
+    }
+
+    .get-our-app-text {
+        font-size: 22px;
     }
 
     #who-are-we {
         padding: 13px 33px;
     }
 
-    .who-are-we-h1 {
-        font-size: calc(26px + 0.2vw);
+    .who-are-we-h1,
+    .who-are-we-h2 {
+        font-size: 23px;
     }
 
     .who-are-we-p {
-        font-size: calc(17px + 0.23vw);
+        font-size: 15px;
+    }
+
+    .h3-div {
+        font-size: 17px;
         font-weight: 500;
-        line-height: 1.3;
-        padding: 0;
-        margin: 0 0 15px;
-    }
-
-    #careers {
-        background-color: #fafffc;
-        padding: 8px 30px 15px;
-        text-align: center;
-    }
-
-    .careers {
-        display: none;
-    }
-
-    .testimonals-head {
-        color: #006729;
-        text-align: center;
-        font-size: calc(33px + 0.2vw);
-        font-weight: 800;
-        padding-bottom: 20px;
     }
 
     .copyright-text {
-        font-size: calc(16px + 0.2vw);
-        text-align: left;
-    }
-
-    .copyright-subtext {
-        font-size: calc(16px + 0.22vw);
-        padding: 17px 0 10px;
-    }
-
-    .logo-side {
-        padding: 0;
-        margin-bottom: 15px;
-    }
-
-    .quick-links {
-        padding: 0;
-        text-align: left;
-    }
-
-    .footer-lin {
-        padding: 0;
-    }
-
-    .contact-us-list {
-        padding: 0;
-    }
-
-    .links-h2 {
-        text-align: left;
-        margin: 0;
-        padding: 0;
+        font-size: 16px;
     }
 
     .handle-text {
+        font-size: 15px;
+    }
+
+    .hr-services {
+        margin: 20px 0 5px;
+    }
+
+    .comments-h2 {
+        font-size: 21px;
+        padding: 0 31px;
+        margin: 0 0 5px;
+        font-weight: 550;
+    }
+
+    .reviews {
+        font-size: 15px;
+        padding: 0 31px 20px;
+    }
+
+    .site-footer {
+        padding: 30px 0 0;
+    }
+
+    .overview-h2,
+    .about-us-h2,
+    .mission-h2,
+    .vision-h2,
+    .school-amb-h2,
+    .goals,
+    .values,
+    .services-h2 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .overview-text,
+    .about-us-text,
+    .mission-text,
+    .vision-text,
+    .value-list,
+    .services-text {
         font-size: 15px;
     }
 
@@ -661,42 +981,5 @@ ul {
         height: 160px;
         padding: 0 10px;
     }
-
-    .site-footer {
-        text-align: left;
-        padding: 25px 30px 15px;
-    }
-
-    #overview {
-        background-color: #fafffc;
-        padding: 1rem 1.6rem 1.2rem;
-    }
-
-    .overview-h2,
-    .mission-h2,
-    .vision-h2,
-    .goals,
-    .values {
-        font-size: 1.8rem;
-        font-weight: 600;
-    }
-
-    .overview-text,
-    .mission-text,
-    .vision-text,
-    .list-of-value {
-        font-size: calc(18px + 0.25vw);
-        line-height: 1.6;
-    }
-
-    #core-values,
-    #school-amb {
-        padding: 1rem 1.6rem 1.2rem;
-    }
-
-    .group-avatar {
-        padding: 1.2rem 1.5rem;
-    }
-
 
 }
