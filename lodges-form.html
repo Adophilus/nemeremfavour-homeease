@@ -71,45 +71,44 @@
 
     <section id="form-section">
         <div class="form-details row">
-            <form action="https://home-ease.onrender.com/api/lodges" method="POST" enctype="multipart/form-data"></form>
+            <form onsubmit="submitForm()" id="lodgeForm">
             <h1 class="form-title">Lodge Details</h1>
 
-            <label for="stringInput" class="form-labels">Name Of Lodge:</label>
-            <input required="text" name="stringInput" id="stringInput" class="content-area"><br>
+            <label for="name" class="form-labels">Name Of Lodge:</label>
+            <input required="text" name="name" id="name" class="content-area"><br>
 
             <label for="numberInput" class="form-labels">Price Of Lodge in (₦):</label>
-            <input type="number" name="numberInput" id="numberInput" class="content-area"><br>
+            <input type="number" name="amount" id="numberInput" class="content-area"><br>
 
-            <label for="stringInput" class="form-labels">Location Of Lodge:</label>
-            <input type="text" name="stringInput" id="stringInput" class="content-area"><br>
+            <label for="location" class="form-labels">Location Of Lodge:</label>
+            <input id="location" type="text" name="location" class="content-area"><br>
 
-            <label for="image1" class="form-labels">Upload Images Of Lodge:</label>
-            <input type="file" name="image1" id="image1"><br>
-            <input type="file" name="image2" id="image2" class="content-area"><br>
+            <label for="images" class="form-labels">Upload Images Of Lodge:</label>
+            <input type="file" multiple name="images" id="images"><br>
 
             <label for="stringInput" class="form-labels">Name Of Caretaker:</label>
-            <input type="text" name="stringInput" id="stringInput" class="content-area"><br>
+            <input type="text" id="stringInput" class="content-area"><br>
 
             <label for="numberInput" class="form-labels">Phone Number Of Caretaker</label>
-            <input type="number" name="numberInput" id="numberInput" class="content-area"><br>
+            <input type="number" id="numberInput" class="content-area"><br>
 
             <label for="option1" class="form-labels">Is There Light?</label>
-            <select class="selectpicker content-area" data-style="btn-info">
-                <option>Yes</option>
-                <option>No</option>
+            <select class="selectpicker content-area" name="conditions.light" data-style="btn-info">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
             </select>
 
             <label for="numberInput" class="form-labels">Average number of hours of Power Supply a day?:</label>
-            <input type="number" name="numberInput" id="numberInput" class="content-area"><br>
+            <input type="number" name="conditions.light" id="numberInput" class="content-area"><br>
 
-            <label for="option1" class="form-labels">Is There Water?</label>
-            <select class="selectpicker content-area" data-style="btn-info">
-                <option>Yes</option>
-                <option>No</option>
+            <label for="conditionsWater" class="form-labels">Is There Water?</label>
+            <select id="conditionsWater" class="selectpicker content-area" name="conditions.water" data-style="btn-info">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
             </select>
 
-            <label for="numberInput" class="form-labels">Transport to school (₦):</label>
-            <input type="number" name="numberInput" id="numberInput" class="content-area"><br>
+            <label for="conditionsTransportFareToSchool" class="form-labels">Transport to school (₦):</label>
+            <input id="conditionsTransportFareToSchool" type="number" name="conditions.transportFareToSchool" class="content-area"><br>
 
             <input type="submit" value="Submit" class="submit-btn">
 
@@ -167,6 +166,7 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src="js/lodges-form.js"></script>
 
 </body>
 
